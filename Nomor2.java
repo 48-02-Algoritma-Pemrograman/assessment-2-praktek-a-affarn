@@ -42,13 +42,14 @@ public class Nomor2 {
     }
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+        int N = input.nextInt();
          ArrayList<Integer> keranjangBuku = new ArrayList<>();
         /* Pekerjaan anda mulai dari sini */
         tampilkanDaftarBuku();
         
         while (true) {
             System.out.print("Masukan pilihan buku [1/2/3/4]: ");
-            int pilihan = input.nextInt();
+            int N = input.nextInt();
             
             keranjangBuku.add(hargaBuku[pilihan - 1]);
             
