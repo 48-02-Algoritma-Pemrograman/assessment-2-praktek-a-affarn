@@ -50,12 +50,12 @@ public class Nomor2 {
         
         while (true) {
             System.out.print("Masukan pilihan buku [1/2/3/4]: ");
-            int pilihan = scanner.nextInt();
+            int pilihan = input.nextInt();
             
             keranjangBuku.add(hargaBuku[pilihan - 1]);
             
             System.out.print("Input lagi (Y/N)?: ");
-            String konfirmasi = scanner.next();
+            String konfirmasi = input.next();
             
             if (konfirmasi.equalsIgnoreCase("N")) {
                 break;
