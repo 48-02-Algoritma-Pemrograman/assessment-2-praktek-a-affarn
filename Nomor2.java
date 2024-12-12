@@ -44,6 +44,32 @@ public class Nomor2 {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
         /* Pekerjaan anda mulai dari sini */
+         ArrayList<Integer> keranjangBuku = new ArrayList<>();
+        
+        tampilkanDaftarBuku();
+        
+        while (true) {
+            System.out.print("Masukan pilihan buku [1/2/3/4]: ");
+            int pilihan = scanner.nextInt();
+            
+            keranjangBuku.add(hargaBuku[pilihan - 1]);
+            
+            System.out.print("Input lagi (Y/N)?: ");
+            String konfirmasi = scanner.next();
+            
+            if (konfirmasi.equalsIgnoreCase("N")) {
+                break;
+            }
+        }
+        
+        int totalHarga = hitungTotalHarga(keranjangBuku);
+
+        int voucher = hitungVoucher(totalHarga);
+        
+        System.out.println("Total voucher belanja = " + voucher);
+        System.out.println("Total yang harus dibayar = " + (totalHarga));
+        
+        scanner.close();
     
         /* Pekerjaan anda berakhir sini */
 
