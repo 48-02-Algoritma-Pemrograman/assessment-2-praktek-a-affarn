@@ -42,10 +42,8 @@ public class Nomor2 {
     }
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        int N = input.nextInt();
-        /* Pekerjaan anda mulai dari sini */
          ArrayList<Integer> keranjangBuku = new ArrayList<>();
-        
+        /* Pekerjaan anda mulai dari sini */
         tampilkanDaftarBuku();
         
         while (true) {
