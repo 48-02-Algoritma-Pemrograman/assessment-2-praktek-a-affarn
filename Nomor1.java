@@ -6,6 +6,9 @@ public class Nomor1 {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
         /* Pekerjaan anda mulai dari sini */
+        System.out.print("Masukan nilai N : ");
+        fizzBuzz(N);
+        
         public static void fizzBuzz(int n) {
         for (int i = 0; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
