@@ -1,15 +1,7 @@
 import java.util.Scanner;
 
 public class Nomor1 {
-
-    public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        int N = input.nextInt();
-        /* Pekerjaan anda mulai dari sini */
-        System.out.print("Masukan nilai N : ");
-        fizzBuzz(N);
-        
-        public static void fizzBuzz(int n) {
+    public static void fizzBuzz(int n) {
         for (int i = 0; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("FizzBuzz ");
@@ -22,9 +14,16 @@ public class Nomor1 {
             }
         }
     }
-        /* Pekerjaan anda berakhir sini */
 
-        System.out.println(Nomor1.class.getDeclaredMethods().length); 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int N = input.nextInt();
+        
+        System.out.print("Masukan nilai N : ");
+        fizzBuzz(N);
+
+        System.out.println("\n" + Nomor1.class.getDeclaredMethods().length);
+
+        input.close();
     }
-    
 }
