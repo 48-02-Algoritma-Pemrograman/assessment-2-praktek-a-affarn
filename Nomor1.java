@@ -6,7 +6,7 @@ public class Nomor1 {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
         /* Pekerjaan anda mulai dari sini */
-        static fizzBuzz(int n) {
+        static void fizzBuzz(int n) {
         for (int i = 0; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("FizzBuzz ");
